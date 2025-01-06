@@ -12,20 +12,25 @@ const { NotImplementedError } = require('../extensions/index.js');
  * stack.pop(); // undefined
  *
  */
+
 class Stack {
-  push(/* element */) {
-    throw new NotImplementedError('Not implemented');
+  tipo_stack = [];
+  push(element) {
+    //throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
+    this.tipo_stack.push(element);
   }
 
   pop() {
-    throw new NotImplementedError('Not implemented');
+    //throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
+    return this.tipo_stack.pop();
   }
 
   peek() {
-    throw new NotImplementedError('Not implemented');
+    //throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
+    return this.tipo_stack[this.tipo_stack.length - 1];
   }
 }
 
